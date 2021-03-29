@@ -87,6 +87,7 @@ input {
   border-radius: 3rem;
 }
 
+
 #range-output {
   font-size: 1.6rem;
 }
@@ -110,7 +111,7 @@ input {
 }
 
 #new-game-button {
-  border-radius: 2rem;
+  border-radius: 3rem;
   background: linear-gradient(rgb(38, 192, 0), rgb(24, 121, 0));
 }
 
@@ -132,6 +133,31 @@ input {
 
 #space {
   border-radius: 3rem;
+}
+
+#mobile-button {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  #mobile-button {
+    display: flex;
+
+    padding: none;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: auto;
+    border-radius: 3rem;
+    background: linear-gradient(rgb(38, 192, 0), rgb(24, 121, 0));
+  }
+
+  #mobile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 800px) {

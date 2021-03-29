@@ -8,25 +8,25 @@ let high = 100;
 
 function updateRange() {
   const lowValue = document.getElementById("low");
-  lowValue.style.flex = low + "%";
-  lowValue.style.background = "none";
+    lowValue.style.flex = low + "%";
+    lowValue.style.background = "none";
   const space = document.getElementById("space");
-  space.style.flex = high - low + "%";
-  space.style.background = "linear-gradient(rgb(45, 226, 0), rgb(24, 121, 0))";
+    space.style.flex = high - low + "%";
+    space.style.background = "linear-gradient(rgb(45, 226, 0), rgb(24, 121, 0))";
   const highValue = document.getElementById("high");
-  highValue.style.flex = 100 - high + "%";
-  highValue.style.background = "none";
+    highValue.style.flex = 100 - high + "%";
+    highValue.style.background = "none";
   const rangeOutput = document.getElementById("range-output");
-  rangeOutput.innerText = `${low} - ${high}` // variable low - variable high
-  rangeOutput.style.marginLeft = low -20 + "%";
-  rangeOutput.style.marginRight = 100 - high - 20 + "%";
-  rangeOutput.classList.add("flash");
+    rangeOutput.innerText = `${low} - ${high}`;
+    rangeOutput.style.marginLeft = low - 20 + "%";
+    rangeOutput.style.marginRight = 100 - high - 20 + "%";
+    rangeOutput.classList.add("flash");
   const rangeBackground = document.getElementById("range");
-  rangeBackground.style.background = "none";
+    rangeBackground.style.background = "none";
 }
 
 function initialize() {
-  computerGuess = Math.floor(Math.random() * 100 + 1)
+ computerGuess = Math.floor(Math.random() * 100 + 1)
  document.getElementById("new-game-button").style.display = "none";
  document.getElementById("game-area").style.display = "none";
 }
@@ -83,7 +83,7 @@ function compareGuess() {
       document.getElementById("inputBox").value = "";
       gameEnd();
     } else {
-      document.getElementById("text-output").innerHTML = "You lose! Huehuehue. The number was " + computerGuess;
+      document.getElementById("text-output").innerHTML = "You lose! Hehe. The number was " + computerGuess;
       gameEnd();
     }
   }
